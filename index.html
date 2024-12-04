@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>enua chatbot</title>
+    <link rel="stylesheet" href="enua.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>SVG Background</title>
+    <style>
+      /* Bakgrunn for hele siden */
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background-image: url('https://cdn.prod.website-files.com/64464e23e1f249b3dd302ed6/64464e54a7f9f0ccef108b00_Primary%20logo.svg');
+        background-size: 20% 25%; /* Tilpasser SVG for 5 kolonner og 4 rader */
+        background-repeat: repeat; /* Gjenta SVG i mønster */
+        background-position: center; /* Sentraliserer mønsteret */
+      }
+    </style>
+</head>
+<body>
+ <!-- Chatbot-seksjon -->
+    <div>
+        <div id="chat-container"></div>
+    </div>
+
+    <!-- Script for chatbot -->
+    <script type="text/javascript">
+        (function(d, t) {
+            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            v.onload = function() {
+                window.voiceflow.chat.load({
+                    verify: { projectID: '67385c085f1ba567d7b171c0' },
+                    url: 'https://general-runtime.voiceflow.com',
+                    versionID: 'production',
+                    assistant: {
+                        stylesheet: "enua.css" // Beholder tilpasset stylesheet
+                    },
+                    render: {
+                        mode: 'embedded',
+                        target: document.getElementById('chat-container'),
+                    },
+                    autostart: true
+                });
+            };
+            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
+            v.type = "text/javascript";
+            s.parentNode.insertBefore(v, s);
+        })(document, 'script');
+    </script>
+</body>
+</html>
