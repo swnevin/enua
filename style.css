@@ -69,6 +69,7 @@
   font-family:'Manrope', sans-serif;
   font-size: 1.12em;
   transform: translateY(-8.5em);
+  padding: 5px;
   }
   
   .vfrc-chat--session-time,
