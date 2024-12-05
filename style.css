@@ -7,6 +7,16 @@
     font-family: 'Manrope', sans-serif;
 }
 
+ body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background-image: url('https://cdn.prod.website-files.com/64464e23e1f249b3dd302ed6/64464e54a7f9f0ccef108b00_Primary%20logo.svg');
+        background-size: 20% 25%; /* Tilpasser SVG for 5 kolonner og 4 rader */
+        background-repeat: repeat; /* Gjenta SVG i mønster */
+        background-position: center; /* Sentraliserer mønsteret */
+      }
+
  .vfrc-widget--chat {
     border-radius: 0px;
     width: 150%;
