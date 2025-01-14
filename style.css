@@ -80,7 +80,7 @@
   
   .vfrc-chat--session-time,
   .vfrc-chat--status {
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='250px'><text x='60' y='30' fill='%233b455b' font-family='Arial' font-size='13'>Enua</text></svg>");
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='250px'><text x='60' y='30' fill='%233b455b' font-family='Arial' font-size='13'>Enuabot</text></svg>");
     background-repeat: no-repeat;
     background-position: left;
   }
